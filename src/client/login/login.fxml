@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.login.LoginController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Bolgen">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="200.0" layoutY="20.0" text="Имя учетной записи:">
+               <VBox.margin>
+                  <Insets left="270.0" top="220.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="userLoginField" layoutX="200.0" layoutY="42.0" maxHeight="30.0" maxWidth="260.0" minHeight="30.0" minWidth="260.0" prefHeight="30.0" prefWidth="260.0" promptText="Username">
+               <VBox.margin>
+                  <Insets left="270.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Пароль:">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="270.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <PasswordField fx:id="userPasswordField" maxHeight="30.0" maxWidth="260.0" minHeight="30.0" minWidth="260.0" prefHeight="30.0" prefWidth="260.0" promptText="Password">
+               <VBox.margin>
+                  <Insets left="270.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Label text="Адрес сервера:">
+               <VBox.margin>
+                  <Insets left="270.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="serverAddressField" maxHeight="30.0" maxWidth="260.0" minHeight="30.0" minWidth="260.0" prefHeight="30.0" prefWidth="260.0" promptText="127.0.0.1:4242" text="127.0.0.1:4242">
+               <VBox.margin>
+                  <Insets left="270.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="logInButton" minWidth="20.0" mnemonicParsing="false" onAction="#logInButtonClick" prefHeight="40.0" prefWidth="100.0" text="Войти">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="350.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="regUser" mnemonicParsing="false" onAction="#regUserClick" prefHeight="30.0" prefWidth="160.0" text="Создать учетную запись">
+               <VBox.margin>
+                  <Insets left="320.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

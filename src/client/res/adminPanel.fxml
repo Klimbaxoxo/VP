@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="adminTable" prefHeight="402.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="tableLogin" editable="false" prefWidth="186.0" text="Логин" />
+                <TableColumn fx:id="tableName" editable="false" prefWidth="202.0" text="Имя пользователя" />
+                  <TableColumn fx:id="tableBan" editable="false" prefWidth="95.0" text="Бан" />
+                  <TableColumn fx:id="tableMute" editable="false" prefWidth="116.0" text="Блокировка чата" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</Pane>
